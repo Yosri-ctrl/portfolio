@@ -4,7 +4,7 @@ import planets1 from "../assets/img/planets1.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import Pdf from "../assets/Yosri_Bouabid_FullStack.pdf";
+import Pdf from "../assets/Yosri_Bouabid.pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -59,19 +59,11 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               <div>
-                <a
-                  href={Pdf}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ color: "rgb(223, 221, 221)" }}
-                >
-                  <span className="tagline">Download CV</span>
-                </a>
                 <h1>
-                  {`Hi! I'm Yosri`}{" "}
+                  {`Hi! I'm Yosri a `}
                   <span
                     className="txt-rotate"
-                    dataPeriod="10"
+                    dataPeriod="10000"
                     data-rotate='[ "Web Developer", "Web Designer", "Software Developer" ]'
                   >
                     <span className="wrap">{text}</span>
@@ -83,6 +75,14 @@ export const Banner = () => {
                   and abilities even more. Highly organized multitasking with
                   expertise in scheduling projects.
                 </p>
+                <a
+                  href={Pdf}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "rgb(223, 221, 221)" }}
+                >
+                  <span className="tagline">Download CV</span>
+                </a>
                 <a href="#connect" style={{ textDecoration: "none" }}>
                   <button className="vvd">
                     <span>
